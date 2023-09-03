@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans  
+                http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">  
+
+
+<bean id ="Ans1" class="com.springCore.Collection2.Answer">
+<property name="id" value= "106"></property>
+<property name="name" value = "java is a Programming Laguage"></property>
+<property name="by" value = "Rishabh"></property>
+</bean> 
+
+<bean id ="Ans2" class="com.springCore.Collection2.Answer">
+<property name="id" value= "107"></property>
+<property name="name" value = "java is a Platform "></property>
+<property name="by" value = "Rashmi"></property>
+</bean> 
+
+<bean id ="Que1" class="com.springCore.Collection2.Question">
+<property name="id" value= "1"></property>
+<property name="name" value = "What is a java "></property>
+<property name="answer" >
+<list>
+<ref bean="Ans1"/>
+<ref bean="Ans2"/>
+</list>
+</property>
+</bean> 
+  
+</beans>
